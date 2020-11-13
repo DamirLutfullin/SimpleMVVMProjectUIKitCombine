@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		192A832E255F340A003D114D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192A832D255F340A003D114D /* DetailViewController.swift */; };
+		192A8331255F348B003D114D /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192A8330255F348B003D114D /* DetailViewModel.swift */; };
 		19300736255E669E009DA6BC /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19300735255E669E009DA6BC /* ProfileModel.swift */; };
 		1930073A255E66B7009DA6BC /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19300739255E66B7009DA6BC /* ProfileViewModel.swift */; };
 		1930073D255E66F8009DA6BC /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1930073C255E66F8009DA6BC /* ProfileCell.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		192A832D255F340A003D114D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		192A8330255F348B003D114D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		19300735255E669E009DA6BC /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
 		19300739255E66B7009DA6BC /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		1930073C255E66F8009DA6BC /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
@@ -45,6 +49,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		192A8329255F33A5003D114D /* ProfileDetail */ = {
+			isa = PBXGroup;
+			children = (
+				192A832B255F33CC003D114D /* View */,
+				192A832C255F33D4003D114D /* ViewModel */,
+			);
+			path = ProfileDetail;
+			sourceTree = "<group>";
+		};
+		192A832B255F33CC003D114D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				192A832D255F340A003D114D /* DetailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		192A832C255F33D4003D114D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				192A8330255F348B003D114D /* DetailViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		19300732255E6669009DA6BC /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +101,7 @@
 		1930073F255E6CF6009DA6BC /* ProfileTableView */ = {
 			isa = PBXGroup;
 			children = (
+				19300740255E6D25009DA6BC /* ProfileCell */,
 				19300734255E6678009DA6BC /* Model */,
 				19300733255E6670009DA6BC /* View */,
 				19300732255E6669009DA6BC /* ViewModel */,
@@ -123,10 +153,10 @@
 		1968FDA8255E1F7500F884B6 /* TestMVVM2 */ = {
 			isa = PBXGroup;
 			children = (
-				19300740255E6D25009DA6BC /* ProfileCell */,
-				1930073F255E6CF6009DA6BC /* ProfileTableView */,
 				1968FDA9255E1F7500F884B6 /* AppDelegate.swift */,
 				1968FDAB255E1F7500F884B6 /* SceneDelegate.swift */,
+				1930073F255E6CF6009DA6BC /* ProfileTableView */,
+				192A8329255F33A5003D114D /* ProfileDetail */,
 				1968FDAF255E1F7500F884B6 /* Main.storyboard */,
 				1968FDB2255E1F7800F884B6 /* Assets.xcassets */,
 				1968FDB4255E1F7800F884B6 /* LaunchScreen.storyboard */,
@@ -209,9 +239,11 @@
 				1968FDAA255E1F7500F884B6 /* AppDelegate.swift in Sources */,
 				1968FDAC255E1F7500F884B6 /* SceneDelegate.swift in Sources */,
 				19300744255E6D90009DA6BC /* ProfileCellViewModel.swift in Sources */,
+				192A8331255F348B003D114D /* DetailViewModel.swift in Sources */,
 				1930073D255E66F8009DA6BC /* ProfileCell.swift in Sources */,
 				19300736255E669E009DA6BC /* ProfileModel.swift in Sources */,
 				1930073A255E66B7009DA6BC /* ProfileViewModel.swift in Sources */,
+				192A832E255F340A003D114D /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

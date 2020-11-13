@@ -26,5 +26,18 @@ class ViewController: UITableViewController {
         cell.viewModel = cellViewModel
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        viewModel.selectRow(indexPath: indexPath)
+        performSegue(withIdentifier: "showDetailViewController", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let identifier = segue.identifier, let viewModel = viewModel  else { return }
+        if identifier == "showDetailViewController" {
+            let dvc = segue.destination as! DetailViewController
+            dvc.viewModel = viewModel.viewModelForSelectedRow()
+        }
+    }
 }
 

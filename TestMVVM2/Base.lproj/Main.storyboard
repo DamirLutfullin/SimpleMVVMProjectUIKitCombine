@@ -3,6 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -69,10 +70,44 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="KAb-03-QRF"/>
+                    <connections>
+                        <segue destination="guc-Ba-K40" kind="show" identifier="showDetailViewController" id="QPQ-T1-RLP"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YTK-80-C9A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1202.4000000000001" y="71.514242878560722"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="V2i-DB-S8r">
+            <objects>
+                <viewController id="guc-Ba-K40" customClass="DetailViewController" customModule="TestMVVM2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J9b-q1-nfX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="il2-af-20n">
+                                <rect key="frame" x="166.5" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Guw-AC-khJ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="il2-af-20n" firstAttribute="centerX" secondItem="J9b-q1-nfX" secondAttribute="centerX" id="DNG-UF-Fdb"/>
+                            <constraint firstItem="il2-af-20n" firstAttribute="centerY" secondItem="J9b-q1-nfX" secondAttribute="centerY" id="kBw-UF-0hC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="s3J-JP-TWW"/>
+                    <connections>
+                        <outlet property="label" destination="il2-af-20n" id="90Z-jz-Ous"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A6L-vr-wEF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1962" y="72"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zgs-S2-3Wb">
