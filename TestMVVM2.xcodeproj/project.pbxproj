@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19300736255E669E009DA6BC /* ProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19300735255E669E009DA6BC /* ProfileModel.swift */; };
+		1930073A255E66B7009DA6BC /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19300739255E66B7009DA6BC /* ProfileViewModel.swift */; };
+		1930073D255E66F8009DA6BC /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1930073C255E66F8009DA6BC /* ProfileCell.swift */; };
+		19300744255E6D90009DA6BC /* ProfileCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19300743255E6D90009DA6BC /* ProfileCellViewModel.swift */; };
 		1968FDAA255E1F7500F884B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1968FDA9255E1F7500F884B6 /* AppDelegate.swift */; };
 		1968FDAC255E1F7500F884B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1968FDAB255E1F7500F884B6 /* SceneDelegate.swift */; };
 		1968FDAE255E1F7500F884B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1968FDAD255E1F7500F884B6 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19300735255E669E009DA6BC /* ProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileModel.swift; sourceTree = "<group>"; };
+		19300739255E66B7009DA6BC /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		1930073C255E66F8009DA6BC /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		19300743255E6D90009DA6BC /* ProfileCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCellViewModel.swift; sourceTree = "<group>"; };
 		1968FDA6255E1F7500F884B6 /* TestMVVM2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMVVM2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1968FDA9255E1F7500F884B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1968FDAB255E1F7500F884B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +45,65 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		19300732255E6669009DA6BC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				19300739255E66B7009DA6BC /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		19300733255E6670009DA6BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1968FDAD255E1F7500F884B6 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		19300734255E6678009DA6BC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				19300735255E669E009DA6BC /* ProfileModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1930073F255E6CF6009DA6BC /* ProfileTableView */ = {
+			isa = PBXGroup;
+			children = (
+				19300734255E6678009DA6BC /* Model */,
+				19300733255E6670009DA6BC /* View */,
+				19300732255E6669009DA6BC /* ViewModel */,
+			);
+			path = ProfileTableView;
+			sourceTree = "<group>";
+		};
+		19300740255E6D25009DA6BC /* ProfileCell */ = {
+			isa = PBXGroup;
+			children = (
+				19300741255E6D54009DA6BC /* View */,
+				19300742255E6D5D009DA6BC /* ViewModel */,
+			);
+			path = ProfileCell;
+			sourceTree = "<group>";
+		};
+		19300741255E6D54009DA6BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1930073C255E66F8009DA6BC /* ProfileCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		19300742255E6D5D009DA6BC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				19300743255E6D90009DA6BC /* ProfileCellViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		1968FD9D255E1F7500F884B6 = {
 			isa = PBXGroup;
 			children = (
@@ -56,9 +123,10 @@
 		1968FDA8255E1F7500F884B6 /* TestMVVM2 */ = {
 			isa = PBXGroup;
 			children = (
+				19300740255E6D25009DA6BC /* ProfileCell */,
+				1930073F255E6CF6009DA6BC /* ProfileTableView */,
 				1968FDA9255E1F7500F884B6 /* AppDelegate.swift */,
 				1968FDAB255E1F7500F884B6 /* SceneDelegate.swift */,
-				1968FDAD255E1F7500F884B6 /* ViewController.swift */,
 				1968FDAF255E1F7500F884B6 /* Main.storyboard */,
 				1968FDB2255E1F7800F884B6 /* Assets.xcassets */,
 				1968FDB4255E1F7800F884B6 /* LaunchScreen.storyboard */,
@@ -140,6 +208,10 @@
 				1968FDAE255E1F7500F884B6 /* ViewController.swift in Sources */,
 				1968FDAA255E1F7500F884B6 /* AppDelegate.swift in Sources */,
 				1968FDAC255E1F7500F884B6 /* SceneDelegate.swift in Sources */,
+				19300744255E6D90009DA6BC /* ProfileCellViewModel.swift in Sources */,
+				1930073D255E66F8009DA6BC /* ProfileCell.swift in Sources */,
+				19300736255E669E009DA6BC /* ProfileModel.swift in Sources */,
+				1930073A255E66B7009DA6BC /* ProfileViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
