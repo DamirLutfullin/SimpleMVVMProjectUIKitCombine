@@ -11,7 +11,7 @@ protocol ProfileViewModelProtocol {
     var numberOfRowsInSection: Int { get }
     func cellViewModel(indexPath: IndexPath) -> ProfileCellViewModelProtocol?
     
-    func viewModelForSelectedRow() -> DetailViewModelProtocol?
+    func viewModelForSelectedRow() -> DetailViewModel?
     func selectRow(indexPath: IndexPath)
 }
 
@@ -32,7 +32,7 @@ class ViewModel: ProfileViewModelProtocol {
         return ProfileCellViewModel(profile: profile)
     }
     
-    func viewModelForSelectedRow() -> DetailViewModelProtocol? {
+    func viewModelForSelectedRow() -> DetailViewModel? {
         guard let inexPath = seletedIndexPath else { return nil }
         return DetailViewModel(profile: profiles[inexPath.row])
     }

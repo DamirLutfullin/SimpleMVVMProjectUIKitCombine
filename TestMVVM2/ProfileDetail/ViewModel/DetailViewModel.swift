@@ -6,14 +6,10 @@
 //
 
 import Foundation
+import Combine
 
-
-protocol DetailViewModelProtocol {
-    var description: String { get set }
-}
-
-class DetailViewModel: DetailViewModelProtocol {
-    var description: String
+class DetailViewModel:  ObservableObject {
+    @Published var description: String
     
     private var profile: Profile
     
